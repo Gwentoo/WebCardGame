@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Grid</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="deck-sidebar">
+        <div class="deck-container">
+            <div class="deck-header">Список карт</div>
+            <div class="deck-columns-wrapper">
+                <div class="deck-column"></div>
+                <div class="deck-column"></div>
+                <div class="deck-column"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid" id="grid"></div>
+    </div>
+
+    <div class="cards-sidebar">
+        <div class="cards-container">
+            <div class="cards-header">Ваши карты</div>
+            <div class="cards-column"></div>
+        </div>
+    </div>
+
+    <div class="game-info">
+        <div class="info-box balance-box">
+            <div class="info-header">Баланс</div>
+            <div class="info-content">
+                <img src="/images/coin.png" alt="Coin" class="coin-icon">
+                <span id="balanceValue">0</span>
+            </div>
+        </div>
+
+        <div class="info-box round-box">
+            <div class="info-header">Раунд</div>
+            <div class="info-content" id="roundValue">1</div>
+        </div>
+        <div class="player-list">
+            <h3>Игроки:</h3>
+            <div id="playersContainer">
+            </div>
+        </div>
+
+        <div class="info-box turn-box">
+            <button id="nextTurnButton" onclick="nextTurn()" class="next-turn-button">Следующий ход</button>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+<script src="/js/game.js"></script>
+</body>
+</html>

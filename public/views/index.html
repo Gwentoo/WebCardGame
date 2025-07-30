@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание лобби</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="" >
+</head>
+<body>
+<div class="container">
+    <div class="side-panel">
+        <div class="player-form">
+            <input type="text" id="usernameInput" placeholder="Введите ник">
+            <select id="roleSelect">
+                <option value="attack">Атака</option>
+                <option value="defense">Защита</option>
+            </select>
+            <button id="connectButton">Подключиться</button>
+        </div>
+
+        <div class="player-stats">
+            <div class="stats">Атака: <span id="attackValue">0</span></div>
+            <div class="stats">Защита: <span id="defenseValue">0</span></div>
+        </div>
+
+        <div class="player-list">
+            <h3>Игроки онлайн:</h3>
+            <div id="playersContainer"></div>
+        </div>
+
+        <button onclick="startGame()">Начать игру</button>
+
+
+    </div>
+
+
+</div>
+<script src="/js/connect.js"></script>
+</body>
+</html>
