@@ -2,4 +2,4 @@
 
 Веб-приложение для собственной карточной игры
 
-![Пример](https://ibb.co/TBnXbHH7)
+![https://ibb.co/TBnXbHH7](https://ibb.co/TBnXbHH7)
